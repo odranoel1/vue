@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>App Vue Js</title>
+</head>
+<body>
+
+  <div id="app">
+    <h1>Hola Mundo con Vue Js</h1>
+    <!-- Interpolación -->
+    <h2>{{ name }}</h2>
+    <ul>
+      <li v-for="contact of contacts">
+        {{contact.nombre}} - {{contact.tel}}
+        <span v-if="contact.tel === 0"> - Sin stock</span>
+      </li>
+    </ul>
+  </div>
+</body>
+
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="app.js" charset="utf-8"></script>
+</html>
