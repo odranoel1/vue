@@ -1,0 +1,17 @@
+.menu-main {
+  border: 1px solid black;
+  background-color: black;
+  list-style: none;
+  padding: 0;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.menu-main li{
+  float: left;
+  padding: 0 10px;
+}
+.menu-main li a{
+  color: white;
+}
